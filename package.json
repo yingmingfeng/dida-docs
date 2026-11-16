@@ -1,0 +1,14 @@
+{
+  "name": "dida-docs",
+  "private": true,
+  "type": "module",
+  "description": "dida 开发者文档（插件开发 / 宿主 API / ZTools 兼容）",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
