@@ -55,8 +55,13 @@ if (result && result.ok === false) {
 }
 ```
 
-降级清单（`simulateMouseClick` / `runFFmpeg` / `ubrowser*` / 文件剪贴板等）与三档保真度表在
-[ZTools 兼容说明](/guide/ztools-compat#window-ztools-覆盖情况)。
+116 个 API 全部有实现（含 `clipboard.getHistory` 这类历史管理、`providers.*` 翻译调用、
+`http.setHeaders` 默认头），只有下面这些是真降级 —— 都以 `{ ok: false, reason }` 表达：
+
+`simulateMouseClick`（鼠标注入）、`runFFmpeg`（未内置 ffmpeg）、`ubrowser*`（无内置浏览器）、
+文件剪贴板写入（只写路径文本）、`registerTool` 的 MCP 暴露（只校验不对外）。
+
+完整的逐条保真度见 [ZTools 兼容说明](/guide/ztools-compat#window-ztools-覆盖情况)。
 
 **3. 装插件不用去 ZTools。** dida 设置 → 插件 → 市场来源选「ZTools 官方市场」，
 市场页直接列官方插件，点安装即下载 `.zpx` 解包登记。
