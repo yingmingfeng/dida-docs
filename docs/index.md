@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 我正在用 ZTools
       link: /guide/ztools-compat
+    - theme: alt
+      text: ZTools 官方文档（全 15 页）
+      link: /ztools/
 
 features:
   - title: 两种运行时
@@ -20,3 +23,5 @@ features:
     details: 插件不只是一个弹窗 —— 可以开在会话的标签条里，与对话、图片、文档标签并列，切走保活、关掉回收。
   - title: 宿主能力直接可用
     details: AI（走你「设置 → 模型」里的默认模型）、剪贴板、通知、文件对话框、键值存储，全都由宿主托管。
+  - title: ZTools 文档已全文收录
+    details: 官方 15 页（清单配置、插件 API、AI 能力、发布流程）原样收进站内，写兼容插件时不用再开第二个站点。

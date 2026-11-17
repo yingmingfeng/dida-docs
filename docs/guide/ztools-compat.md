@@ -3,6 +3,11 @@
 dida 的兼容运行时（`apiProfile: "compat"`）可以直接跑 ZTools 生态的插件：
 清单是 `plugin.json`，页面用 `window.ztools`，安装包是 `.zpx`。
 
+::: tip 官方文档已全文收录
+ZTools 的 15 页官方文档已收录在站内 → [ZTools 文档分区](/ztools/)。
+写插件时查清单字段、API 签名、发布流程，直接看那一套即可；本页只讲 **dida 与 ZTools 的差异**。
+:::
+
 ## 怎么装
 
 1. 插件页 → **设置 → 市场来源 → ZTools 官方市场**；
